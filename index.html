@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Pi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Buy Pi</h1>
+    <p>Sell your Pi securely!</p>
+
+    <form id="piForm">
+        <label for="payment">Choose Payment Method:</label>
+        <select id="payment" required>
+            <option value="jazz">JAZZ</option>
+            <option value="easypaisa">EASYPAISA</option>
+            <option value="binance">BINANCE</option>
+            <option value="bank">BANK</option>
+        </select><br><br>
+
+        <label for="amount">Amount of Pi:</label>
+        <input type="number" id="amount" required min="1"><br><br>
+
+        <button type="submit">Proceed</button>
+    </form>
+
+    <div id="walletInfo" style="display:none;">
+        <h2>Send Pi To:</h2>
+        <p id="walletAddress"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
